@@ -1,2 +1,3 @@
-const User = require("./user");
+const Category = require("./Category");
+const User = require("./User");
 
