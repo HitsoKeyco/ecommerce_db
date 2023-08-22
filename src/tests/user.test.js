@@ -66,6 +66,7 @@ test("PUT -> 'URL_BASE/:id', should return status code 200 and res.body.firstNam
 })
 
 
+
 test("POST -> 'URL_BASE/login', should return status code 200 , res.body.email === user.email, and res.body.token to be defined", async () => {
     const user = {
         email: "erik@gmail.com",
@@ -83,7 +84,6 @@ test("POST -> 'URL_BASE/login', should return status code 200 , res.body.email =
 
 
 
-
 test("POST -> 'URL_BASE/login', should return status code 401", async () => {
     const user = {
         email: "erik@gmail.com",
@@ -95,7 +95,6 @@ test("POST -> 'URL_BASE/login', should return status code 401", async () => {
 
     expect(res.status).toBe(401)
 })
-
 
 
 test("DELETE -> 'URL_BASE/:id', should return status code 204", async () => {
