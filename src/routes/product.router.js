@@ -5,15 +5,15 @@ const verifyJWT = require('../utils/verifYJWT');
 const routerProduct = express.Router();
 
 routerProduct.route('/')
-    .get(getAll)
-    .post(verifyJWT, create); //🔐
+  .get(getAll)
+  .post(verifyJWT, create); //🔐
 
 routerProduct.route('/:id')
-    .get(getOne)
-    .delete(verifyJWT, remove) //🔐
-    .put(verifyJWT, update); //🔐
+  .get(getOne)
+  .delete(verifyJWT, remove) //🔐
+  .put(verifyJWT, update); //🔐
 
 routerProduct.route('/:id/images')
-    .post(setImage)
+  .post(setImage)
 
 module.exports = routerProduct;

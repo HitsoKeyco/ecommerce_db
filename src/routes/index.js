@@ -14,8 +14,8 @@ const router = express.Router();
 router.use("/users", routerUser)
 router.use("/categories", routerCategory)
 router.use("/products", routerProduct)
-router.use("/cart", verifyJWT, routerCart) // 🔐
-router.use("/purchase", verifyJWT, routerPurchase) // 🔐
+router.use("/cart", verifyJWT, routerCart) // 🔐🔐🔐🔐🔐🔐🔐
+router.use("/purchase", verifyJWT, routerPurchase) // 🔐🔐🔐🔐🔐🔐🔐
 router.use("/product_images", verifyJWT, routerProductImg)
 
 
